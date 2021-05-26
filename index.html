@@ -1,4 +1,4 @@
-de
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,13 +14,13 @@ de
              return Math.floor(Math.random() * (max+1)) + 1;
        }
       function generateS () {
-            let max = document.getElementById('max_seasons').value;
-            let rand = randNum(max);
+            let maxS = document.getElementById('max_seasons').value;
+            let rand = randNum(maxS);
             document.getElementById("outputS").innerHTML = rand;
        }
         function generateE () {
-            let max = document.getElementById('max_episodes').value;
-            let rand = randNum(max);
+            let maxE = document.getElementById('max_episodes').value;
+            let rand = randNum(maxE);
             document.getElementById("outputE").innerHTML = rand;
        }
         </script>
