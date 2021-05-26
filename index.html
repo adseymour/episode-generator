@@ -6,7 +6,7 @@
          <style>
              body {
                  text-align:center;
-                 background-color:salmon;
+                 background-color:powderblue;
              }
              
          </style>
@@ -18,13 +18,13 @@
              return Math.floor(Math.random()*( maxEp + 1)) + 1;
        }
       function generateS () {
-            let maxS = document.getElementById('max_seasons').value;
-            let randS = randS(maxS);
+            let maxSe = document.getElementById('max_seasons').value;
+            let randS = randS(maxSe);
             document.getElementById("outputS").innerHTML = randS;
        }
         function generateE () {
-            let maxE = document.getElementById('max_episodes').value;
-            let randE = randE(maxE);
+            let maxEp = document.getElementById('max_episodes').value;
+            let randE = randE(maxEp);
             document.getElementById("outputE").innerHTML = randE;
        }
         </script>
