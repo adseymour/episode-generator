@@ -11,13 +11,11 @@
              
          </style>
         <script>
-       function randS (maxSe) {
-             return Math.floor(Math.random()*( maxSe + 1)) + 1;
+       function randNum (max) {
+             return Math.floor(Math.random()*( max + 1)) + 1;
        }
-            function randE (maxEp) {
-             return Math.floor(Math.random()*( maxEp + 1)) + 1;
-       }
-      function generateS () {
+       
+      function generate() {
             let maxSe = document.getElementById('max_seasons').value;
             let randS = randS(maxSe);
             document.getElementById("outputS").innerHTML = randS;
@@ -35,7 +33,7 @@
     Number of seasons:
   <input type="number" id="max_seasons" placeholder="Seasons"><br>
   <br>
-  <button id="myBut" onclick="generateS()">Season...</button><br><br>
+  <button id="myBut" onclick="generate ()">Season...</button><br><br>
   <div class="green" id="outputS"> </div>
 </div>
         <br><br>
@@ -43,7 +41,7 @@
     Number of episodes:
   <input type="number" id="max_episodes" placeholder="Episodes"><br>
   <br>
-  <button id="myBut" onclick="generateE()">Episode...</button><br><br>
+  <button id="myButt" onclick="generateE ()">Episode...</button><br><br>
   <div class="blue" id="outputE"> </div>
 </div>
   
