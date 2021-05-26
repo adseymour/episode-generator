@@ -16,12 +16,12 @@
       function generateS () {
             let max = document.getElementById('max_value').value;
             let rand = randNum(max);
-            document.getElementById("output").innerHTML = rand;
+            document.getElementById("outputS").innerHTML = rand;
        }
         function generateE () {
             let max = document.getElementById('max_value').value;
             let rand = randNum(max);
-            document.getElementById("output").innerHTML = rand;
+            document.getElementById("outputE").innerHTML = rand;
        }
         </script>
     </head>
@@ -32,7 +32,7 @@
   <input type="number" id="max_value" placeholder="Max Value"><br>
   <br>
   <button id="myBut" onclick="generateS()">Season...</button><br><br>
-  <div class="green" id="output"> </div>
+  <div class="green" id="outputS"> </div>
 </div>
         <br><br>
    <div class="Episode">
@@ -40,7 +40,7 @@
   <input type="number" id="max_value" placeholder="Max Value"><br>
   <br>
   <button id="myBut" onclick="generateE()">Episode...</button><br><br>
-  <div class="green" id="output"> </div>
+  <div class="blue" id="outputE"> </div>
 </div>
   
     </body>
