@@ -5,17 +5,23 @@
          <style>
              body {
                  text-align:center;
+                 background-color:powderblue;
              }
 
          </style>
         <script>
        function randNum (max) {
-             return (Math.random() * (max + 1)) + 1;
+             return Math.floor(Math.random() * (max + 1)) + 1;
        }
-      function generate () {
-            let max = document.getElementById('max_value').value;
-            let rand = randNum(max);
-            document.getElementById("output").innerHTML = rand;
+      function generateS () {
+            var maxSeasons = document.getElementById('sea').valueOf();
+            var rand = randNum(maxSeasons);
+            document.getElementById("seaNum").innerHTML = rand;
+       }
+            function generateE () {
+            var maxEpisodes = document.getElementById('epi').valueOf();
+            var rand = randNum(maxEpisodes);
+            document.getElementById("episodeNum").innerHTML = rand;
        }
         </script>
     </head>
@@ -23,17 +29,17 @@
         <h1>Random Episode Generator </h1>
         <div class="Season">
     Number of seasons:
-  <input type="number" id="max_value" placeholder="Max Value"><br>
+  <input type="number" id="sea" placeholder="Number of Seasons"><br>
   <br><br>
-  <button id="myBut" onclick="generate()">Season...</button><br><br>
-  <div class="green" id="output"> </div>
+  <button id="myBut" onclick="generateS()">Season...</button><br><br>
+  <div class="green" id="seaNum"> </div>
 </div>
    <div class="Episode">
     Number of episodes:
-  <input type="number" id="max_value" placeholder="Max Value"><br>
+  <input type="number" id="epi" placeholder="Number of episodes"><br>
   <br><br>
-  <button id="myBut" onclick="generate()">Episode...</button><br><br>
-  <div class="green" id="output"> </div>
+  <button id="myBut" onclick="generateE()">Episode...</button><br><br>
+  <div class="blue" id="episodeNum"> </div>
 </div>
 
     </body>
