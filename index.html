@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <title> Episode Generator </title>
+         <style>
+             body {
+                 text-align:center;
+             }
+             
+         </style>
+        <script>
+       function randNum (max) {
+             return (Math.random() * max) + 1;
+       }
+      function generate () {
+            let max = document.getElementById('max_value').value;
+            let rand = randNum(max);
+            document.getElementById("output").innerHTML = rand;
+       }
+        </script>
+    </head>
+    <body>
+        <h1>Random Episode Generator </h1>
+        <div class="Season">
+    Number of seasons:
+  <input type="number" id="max_value" placeholder="Max Value"><br>
+  <br><br>
+  <button id="myBut" onclick="generate()">Season...</button><br><br>
+  <div class="green" id="output"> </div>
+</div>
+   <div class="Episode">
+    Number of episodes:
+  <input type="number" id="max_value" placeholder="Max Value"><br>
+  <br><br>
+  <button id="myBut" onclick="generate()">Episode...</button><br><br>
+  <div class="green" id="output"> </div>
+</div>
+  
+    </body>
+
+</html>
