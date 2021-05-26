@@ -11,9 +11,14 @@
          </style>
         <script>
        function randNum (max) {
-             return (Math.random() * max) + 1;
+             return Math.floor(Math.random() * (max+1)) + 1;
        }
-      function generate () {
+      function generateS () {
+            let max = document.getElementById('max_value').value;
+            let rand = randNum(max);
+            document.getElementById("output").innerHTML = rand;
+       }
+        function generateE () {
             let max = document.getElementById('max_value').value;
             let rand = randNum(max);
             document.getElementById("output").innerHTML = rand;
@@ -25,15 +30,16 @@
         <div class="Season">
     Number of seasons:
   <input type="number" id="max_value" placeholder="Max Value"><br>
-  <br><br>
-  <button id="myBut" onclick="generate()">Season...</button><br><br>
+  <br>
+  <button id="myBut" onclick="generateS()">Season...</button><br><br>
   <div class="green" id="output"> </div>
 </div>
+        <br><br>
    <div class="Episode">
     Number of episodes:
   <input type="number" id="max_value" placeholder="Max Value"><br>
-  <br><br>
-  <button id="myBut" onclick="generate()">Episode...</button><br><br>
+  <br>
+  <button id="myBut" onclick="generateE()">Episode...</button><br><br>
   <div class="green" id="output"> </div>
 </div>
   
