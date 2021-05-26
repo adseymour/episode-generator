@@ -6,22 +6,26 @@
          <style>
              body {
                  text-align:center;
+                 background-color:salmon;
              }
              
          </style>
         <script>
-       function randNum (max) {
-             return Math.floor(Math.random() * (max+1)) + 1;
+       function randS (maxSe) {
+             return Math.floor(Math.random()*( maxSe + 1)) + 1;
+       }
+            function randE (maxEp) {
+             return Math.floor(Math.random()*( maxEp + 1)) + 1;
        }
       function generateS () {
             let maxS = document.getElementById('max_seasons').value;
-            let rand = randNum(maxS);
-            document.getElementById("outputS").innerHTML = rand;
+            let randS = randS(maxS);
+            document.getElementById("outputS").innerHTML = randS;
        }
         function generateE () {
             let maxE = document.getElementById('max_episodes').value;
-            let rand = randNum(maxE);
-            document.getElementById("outputE").innerHTML = rand;
+            let randE = randE(maxE);
+            document.getElementById("outputE").innerHTML = randE;
        }
         </script>
     </head>
