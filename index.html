@@ -5,21 +5,22 @@
          <style>
              body {
                  text-align:center;
-                 background-color:yellow;
+                 background-color:salmon;
              }
 
          </style>
         <script>
+            
       function generateS () {
-            var maxSeasons = document.getElementById('sea').toString();
-            var numS = parseInt(maxSeasons);
+            var maxSeasons = document.getElementById('sea');
+            var numS = Math.floor(maxSeasons);
             var sn = Math.floor(Math.random() * (numS+1))+ 1;
             document.getElementById("seaNum").innerHTML = sn;
        }
             function generateE () {
-            var maxEpisodes = document.getElementById('epi').toString();
-            var numE = parseInt(maxEpisodes);
-            var es = Math.floor((Math.random() * (numE+1)) + 1;
+            var maxEpisodes = document.getElementById('epi');
+            var numE = Math.floor(maxEpisodes);
+            var es = Math.floor(Math.random() * (numE+1)) + 1;
             document.getElementById("episodeNum").innerHTML = es;
        }
         </script>
