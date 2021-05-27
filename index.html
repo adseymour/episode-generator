@@ -5,19 +5,19 @@
          <style>
              body {
                  text-align:center;
-                 background-color:salmon;
+                 background-color:white;
              }
 
          </style>
         <script>
       function generateS () {
-            var maxSeasons = document.getElementById('sea').valueOf();
-            var sn = (Math.floor(Math.random() * (maxSeasons + 1)) + 1).valueOf();
+            var maxSeasons = document.getElementById('sea');
+            var sn = Math.floor(Math.random() * (maxSeasons + 1)) + 1;
             document.getElementById("seaNum").innerHTML = sn;
        }
             function generateE () {
-            var maxEpisodes = document.getElementById('epi').valueOf();
-            var es = (Math.floor(Math.random() * (maxEpisodes + 1)) + 1).valueOf();
+            var maxEpisodes = document.getElementById('epi');
+            var es = Math.floor(Math.random() * (maxEpisodes + 1)) + 1;
             document.getElementById("episodeNum").innerHTML = es;
        }
         </script>
