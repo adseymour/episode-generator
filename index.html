@@ -5,23 +5,24 @@
          <style>
              body {
                  text-align:center;
-                 background-color:salmon;
+                 background-color:blue;
              }
 
          </style>
         <script>
-            
-      function generateS () {
-            var maxSeasons = document.getElementById('sea');
-            var numS = Math.floor(maxSeasons);
-            var sn = Math.floor(Math.random() * (numS+1))+ 1;
-            document.getElementById("seaNum").innerHTML = sn;
+     function randNum (max) {
+          max = Math.floor(max);
+           return Math.floor(Math.random() * (max)) + 1;
+        }   
+     function generateS () {
+         let maxS = document.getElementById('sea').value;
+         let randS = randNum(maxS);
+         document.getElementById("seaNum").innerHTML = randS;
        }
-            function generateE () {
-            var maxEpisodes = document.getElementById('epi');
-            var numE = Math.floor(maxEpisodes);
-            var es = Math.floor(Math.random() * (numE+1)) + 1;
-            document.getElementById("episodeNum").innerHTML = es;
+     function generateE () {
+         let maxE = document.getElementById('epi').value;
+         let randE = randNum(maxE);
+        document.getElementById("episodeNum").innerHTML = randE;
        }
         </script>
     </head>
