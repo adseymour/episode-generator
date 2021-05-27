@@ -8,15 +8,11 @@
                  background-image:url("happyrick.jpeg");
                  background-size: cover;
              }
-             .Season {
-                 display: inline-box;
-                 text-align: left;
-                 margin-left: 2in;
+             .green {
+                 font-size: 300%;
              }
-             .Episode {
-                 display: inline-box;
-                 text-align: right;
-                 margin-right: 2in;
+             .blue {
+                 font-size: 300%
              }
          </style>
         <script>
@@ -41,14 +37,15 @@
         <div class="Season">
     Number of seasons:
   <input type="number" id="sea" placeholder="Number of Seasons"><br>
-  <br><br>
+  <br>
   <button id="myBut" onclick="generateS()">Season...</button><br><br>
   <div class="green" id="seaNum"> </div>
+  <br><br>
 </div>
    <div class="Episode">
     Number of episodes:
   <input type="number" id="epi" placeholder="Number of episodes"><br>
-  <br><br>
+  <br>
   <button id="myButt" onclick="generateE()">Episode...</button><br><br>
   <div class="blue" id="episodeNum"> </div>
 </div>
