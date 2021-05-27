@@ -11,12 +11,12 @@
          </style>
         <script>
       function generateS () {
-            var maxSeasons = document.getElementById('sea');
+            var maxSeasons = document.getElementById('sea').parseInt();
             var sn = Math.floor(Math.random() * (maxSeasons + 1)) + 1;
             document.getElementById("seaNum").innerHTML = sn;
        }
             function generateE () {
-            var maxEpisodes = document.getElementById('epi');
+            var maxEpisodes = document.getElementById('epi').parseInt();
             var es = Math.floor(Math.random() * (maxEpisodes + 1)) + 1;
             document.getElementById("episodeNum").innerHTML = es;
        }
@@ -35,7 +35,7 @@
     Number of episodes:
   <input type="number" id="epi" placeholder="Number of episodes"><br>
   <br><br>
-  <button id="myBut" onclick="generateE()">Episode...</button><br><br>
+  <button id="myButt" onclick="generateE()">Episode...</button><br><br>
   <div class="blue" id="episodeNum"> </div>
 </div>
 
