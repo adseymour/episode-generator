@@ -1,0 +1,18 @@
+             body {
+                 text-align:center;
+                 background-image:url("happyrick.jpeg");
+                 background-size: cover;
+                 background-repeat: no-repeat;
+             }
+             .green {
+                 font-size: 300%;
+             }
+             .blue {
+                 font-size: 300%
+             }
+            @media only screen and (max-width: 768px)  {
+                 background-image: url(“ricktall.jpeg”);
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 text-color: white;
+             }
