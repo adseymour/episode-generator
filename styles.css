@@ -13,7 +13,7 @@
         
         @media only screen and (max-device-width: 600px)  {
               body{
-                 background-image: url(“ricktall.jpeg”);
+                 background-image: url('ricktall.jpeg');
                  background-repeat: no-repeat;
                  background-size:cover;
                  text-color: white;
