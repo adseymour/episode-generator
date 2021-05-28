@@ -10,4 +10,13 @@
              .blue {
                  font-size: 300%
              }
-    
+        
+        @media only screen and (max-width:768px)  {
+              body{
+                 background-image: url(“ricktall.jpeg”);
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 text-color: white;
+              }
+             }
+
