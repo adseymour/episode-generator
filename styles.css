@@ -11,7 +11,7 @@
                  font-size: 300%
              }
         
-        @media only screen and (orientation:portrait)  {
+        @media only screen and (max-device-width: 600px)  {
               body{
                  background-image: url(“ricktall.jpeg”);
                  background-repeat: no-repeat;
